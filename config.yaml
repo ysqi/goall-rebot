@@ -1,0 +1,40 @@
+# 此文件为模板，为保障安全性，默认优先读取$HOME/.goall/config.yaml 文件。
+
+Log:
+  PrintGitInfo: true
+
+# webhook
+GitHub_Webhook_Key: 
+
+# Tonken
+GitHub_token: 
+
+# Github信息
+Github:
+  # 所有者
+  OWNER: ysqi
+  # 所接收处理的项目
+  REPO:  goall
+  # 同Github交互所需要的令牌，在https://github.com/settings/tokens 下申请
+  TOKEN: 
+  # 订阅Web hook 事件通知消息解密密钥。属手工随机生成。
+  # 配置地址：https://github.com/ysqi/goall/settings/hooks
+  WEBHOOK_Secret: 
+
+GitPush: 
+  # Commint 和 Push 执行脚本
+  Shell: ./git/push.sh
+  # 项地址
+  GIT_REPO: "ysqi/goall.git"
+  # 用户，commit user
+  GIT_USER: "ysqi"
+  # commit user email
+  GIT_USER_EMAIL: devysq@gmail.com
+  # remote cloe and commit token
+  GIT_TOKEN: 
+  # remote repo save on local path
+  GIT_BASEDIR: /Users/ysqi/tmp/goall
+  # git push remtoe branch
+  GIT_REMOTE_BRANCH: develop
+  # git local branch
+  GIT_LOCAL_BRANCH: develop
